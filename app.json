@@ -1,15 +1,23 @@
 {
-      "name": "Webshot API",
-      "description": "This webshot api can webshoot almost all of your sites.",
-      "logo": "https://telegra.ph/file/0f1d8b3359156d649e1f2.jpg",
-      "keywords": [
-         "dart",
-         "webshoot",
-         "api"
-      ]
-   "buildpacks": [
+  "name": "Webshot API",
+  "website": "https://cyberindonesia001.xyz",
+  "description": "This webshot api can webshoot almost all of your sites.",
+  "logo": "https://telegra.ph/file/0f1d8b3359156d649e1f2.jpg",
+  "keywords": [
+     "dart",
+     "webshoot",
+     "api"
+  ],
+  "success_url": "/help",
+  "buildpacks": [
     {
       "url": "https://github.com/igrigorik/heroku-buildpack-dart"
     }
-  ]
+  ],
+  "env": {
+    "DART_SDK_URL": {
+      "description": "Don't change, Needed for buildpack!",
+      "value": "secret"
+    }
+  }
 }
